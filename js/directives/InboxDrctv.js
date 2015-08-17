@@ -1,9 +1,8 @@
-
 /**
- * Directive: Inbox
+ * Directive: Inbox <inbox></inbox>
  */
 angular.module('EmailApp')
-  .directive('inbox', function inbox () {
+  .directive('inbox', function InboxDrctv () {
     'use strict';
 
     return {
@@ -14,7 +13,6 @@ angular.module('EmailApp')
       controllerAs: 'inbox',
 
       controller: function (InboxFactory) {
-        
         this.messages = [];
 
         this.goToMessage = function (id) {
